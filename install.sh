@@ -1,6 +1,6 @@
 #! /bin/bash
 sudo add-apt-repository -y ppa:regolith-linux/stable
-sudo apt install -y i3-gaps feh picom batcat lolcat cowsay zsh lua git
+sudo apt install -y i3-gaps feh picom batcat lolcat cowsay fortune zsh lua git
 
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -22,3 +22,6 @@ cp fleckenstein.zsh-theme ~/.oh-my-zsh/themes/fleckenstein.zsh-theme
 
 mkdir -p ~/
 cp zshrc ~/.zshrc
+
+mkdir -p ~/
+cp wallpaper.png ~/wallpaper.png
