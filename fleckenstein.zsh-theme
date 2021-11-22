@@ -19,8 +19,8 @@ function theme_precmd {
       	USER_ALIAS=$USER
     fi
 
-    if [[ "USER_ALIAS_LENGTH" == "" ]]; then
-		USER_ALIAS_LENGTH=${#$USER_ALIAS}
+    if [[ "$USER_ALIAS_LENGTH" == "" ]]; then
+		USER_ALIAS_LENGTH=${#${USER_ALIAS}}
     fi
 
     local promptsize=${#${(%):-------[@%m:%l)---()--}}
