@@ -1,6 +1,6 @@
 #! /bin/bash
 sudo -E add-apt-repository -y ppa:regolith-linux/stable
-sudo -E apt install -y i3-gaps feh picom bat lolcat cowsay fortune zsh lua git
+sudo -E apt install -y i3-gaps feh picom bat lolcat cowsay fortune zsh lua5.3 git
 
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
