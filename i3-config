@@ -23,6 +23,9 @@ bindsym $mod+Shift+d exec discord
 bindsym $mod+Shift+h exec hexchat
 bindsym $mod+Shift+m exec element-desktop
 
+# screenshot
+bindsym Print exec scrot
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
