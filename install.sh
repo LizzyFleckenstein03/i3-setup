@@ -1,5 +1,4 @@
 #! /bin/bash
-
 function command_exists {
 	command -v $1 &> /dev/null
 }
@@ -17,9 +16,10 @@ if [[ "$USER" != "root" ]]; then
 fi
 
 if command_exists apt; then
-	$SUDO add-apt-repository -y ppa:regolith-linux/stable
+	$SUDO add-apt-repository -y ppa:regolith-linux/stable	
 	$SUDO apt install -y \
 		i3-gaps \
+		i3status \
 		feh \
 		picom \
 		bat \
@@ -64,6 +64,9 @@ elif command_exists emerge; then
 		media-fonts/hack
 
 	$SUDO ln -s /usr/local/bin/bat /usr/bin/batcat
+else
+	echo "Distro not supported"
+	exit 1
 fi
 
 curl -L https://sw.kovidgoyal.net/kitty/installer.sh | bash
